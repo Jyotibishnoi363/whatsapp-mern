@@ -1,0 +1,95 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+
+  &__header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  &__headerInfo {
+    flex: 1;
+    padding-left: 20px;
+
+    h3 {
+      margin-bottom: 3px;
+      font-weight: 500;
+    }
+
+    p {
+      color: gray;
+    }
+  }
+
+  &__headerRight {
+  }
+
+  &__body {
+    flex: 1;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  }
+
+  &__messages {
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    background-color: #dcf8c6;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__receiver {
+    margin-left: auto;
+    background-color: #ffffff;
+  }
+
+  &__name {
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+  }
+
+  &__timestamp {
+    margin-left: 10px;
+    font-size: xx-small;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+
+    form {
+      flex: 1;
+      display: flex;
+
+      button {
+        display: none;
+      }
+    }
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 30px;
+      outline-width: 0;
+      border: none;
+    }
+
+    .MuiSvgIcon-root {
+      padding: 10px;
+      color: gray;
+    }
+  }
+}
